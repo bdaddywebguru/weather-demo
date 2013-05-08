@@ -12,12 +12,12 @@ body {
 	line-height:1.5;
 	margin:0 auto;
 	padding:0.25em 0;
-	height:100%;
 	width:100%;
 }
 table {
 	border-collapse:collapse;
 	border-spacing:0;
+	overflow:hidden;
 	max-width:100%;
 }
 td {

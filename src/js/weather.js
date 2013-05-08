@@ -87,4 +87,13 @@ $(function () {
 	});
 });
 
-
+// ON RESIZE
+$(window).resize(function() {
+  var pageWidth = $(document).width();
+  var viewportWidth = $(window).width();
+  if ( pageWidth > viewportWidth ) {
+    $('body').css('width',pageWidth);
+  }else{
+    $('body').css('width','auto');
+  }
+});
