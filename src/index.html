@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
+<!--
+******************************************************************************************************************
+Created, integrated or modified by WhiteLabelWebDeveloper.com ( 877-919-0326 | info@whitelabelwebdeveloper.com )
+******************************************************************************************************************
+-->
 	<head><script src='../_forge/app_config.js'></script><script src='../_forge/all.js'></script>
+		<title>Native/HTML5 Mobile App Demo | WhiteLabelWebDeveloper.com</title>
+		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="https://trigger.io/catalyst/target/target-script-min.js#4DBBC75C-B44E-4B50-BAFA-F49244502E51"></script>
+		<script type="text/javascript" src="https://trigger.io/catalyst/target/target-script-min.js#4DBBC75C-B44E-4B50-BAFA-F49244502E51"></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/mustache.min.js"></script>
 		<script type="text/javascript" src="js/weather.js"></script>
 	</head>
 	<body>
-		<script type="x-mustache-template" id="forecast_information_tmpl">
+		<!-- script type="x-mustache-template" id="forecast_information_tmpl" -->
+		<script type="text/javascript" id="forecast_information_tmpl">
 			<h1>Forecast for {{display_location.full}}</h1>
 			<p>{{observation_time}}</p>
 		</script>
@@ -27,7 +35,8 @@
 			</table>
 		</script>
 		
-		<script type="x-mustache-template" id="forecast_conditions_tmpl">
+		<!-- script type="x-mustache-template" id="forecast_conditions_tmpl" -->
+		<script type="text/javascript" id="forecast_conditions_tmpl">
 			{{#forecastday}}
 			<td>
 				<h2>{{date.weekday_short}}</h2>
@@ -45,14 +54,19 @@
 
 		<section id="forecast_conditions">
 			<table>
-				<tr>
-				</tr>
+				<tr><td>&nbsp;</td></tr>
 			</table>
 		</section>
 
 		<div id="options">
 			<div id="options_header">Select City</div>
 			<select id="city_menu"></select>
+		</div>
+		<div class="wlwebus-footer">
+			<a href="http://whitelabelwebdeveloper.com/">Native/HTML5</a>
+			<br/><a href="http://whitelabelwebdeveloper.com/">Mobile App Demo</a>
+			<br/><a href="http://whitelabelwebdeveloper.com/">WhiteLabelWebDeveloper.com</a>
+			<br/><a href="tel:8779190326">877-919-0326</a>
 		</div>
 	</body>
 </html>

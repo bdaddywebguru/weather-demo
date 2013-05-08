@@ -54,19 +54,16 @@ function emptyContent() {
 
 $(function () {
 	var cities = [ 
-		{ name: "London", code: "UK/London" },
-		{ name: "San Francisco", code: "CA/San_Francisco" },
-		{ name: "Cape Town", code: "ZA/Cape_Town" },
-		{ name: "Barcelona", code: "ES/Barcelona" },
-		{ name: "Boston", code: "NY/Boston" },
 		{ name: "New York", code: "NY/New_York" },
-		{ name: "Washington DC", code: "DC/Washington" },
-		{ name: "Tampa", code: "FL/Tampa" },
-		{ name: "Houston", code: "AL/Houston" },
-		{ name: "Montreal", code: "CYUL" },
 		{ name: "Los Angeles", code: "CA/Los_Angeles" },
-		{ name: "Miami", code: "FL/Miami" },
-		{ name: "West Palm Beach", code: "FL/West_Palm_Beach" } 
+		{ name: "Chicago", code: "IL/Chicago" },
+		{ name: "Houston", code: "TX/Houston" },
+		{ name: "Philadelphia", code: "PA/Philadelphia" },
+		{ name: "Phoenix", code: "AZ/Phoenix" },
+		{ name: "San Antonio", code: "TX/San Antonio" },
+		{ name: "San Diego", code: "CA/San Diego" },
+		{ name: "Dallas", code: "TX/Dallas" },
+		{ name: "San Jose", code: "CA/San Jose" } 
 	];
 	cities.forEach(function(city) {	
 		$("#city_menu").append("<option value='" + city.code + "'>" + city.name + "</option>");
@@ -80,13 +77,13 @@ $(function () {
 		if (resource) { // user has previously selected a city
 			var city = resource;
 		} else { // no previous selection
-			var city = "CA/San_Francisco";
+			var city = "TX/San Antonio";
 		}
 		$("#city_menu").val(city);
 		$("#city_menu").change();
 	}, function (error) {
 		forge.logging.error("failed when retrieving city preferences");
-		$("#city_menu").val("CA/San_Francisco"); // default;
+		$("#city_menu").val("TX/San Antonio"); // default;
 	});
 });
 
