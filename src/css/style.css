@@ -1,62 +1,93 @@
 /*
-YUI 3.4.1 (build 4118)
-Copyright 2011 Yahoo! Inc. All rights reserved.
-Licensed under the BSD License.
-http://yuilibrary.com/license/
-*/
-/*
 ******************************************************************************************************************
 Created, integrated or modified by WhiteLabelWebDeveloper.com ( 877-919-0326 | info@whitelabelwebdeveloper.com )
 ******************************************************************************************************************
 */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{font-size:100%}legend{color:#003a00}
-/* CSS Rest ends */
-
-/* Set Global Styles */
-html {background:#efe;}
-body {font:12px/1.5 arial,helvetica,sans-serif; color:#003a00; height: 350px}
-a:link, a:visited {text-decoration:none; color:#216c2a;}
-img {padding:5px; margin:5px 5px 5px 0; background:#fff;}
-
-/* Set App Styles */
+body {
+	background-color:#efe;
+	color:#003a00; 
+	font-family:Arial,sans-serif;
+	font-size:1.0em;
+	font-weight:normal;
+	line-height:1.5;
+	margin:0 auto;
+	padding:0.25em 0;
+	height:100%;
+	width:100%;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	max-width:100%;
+}
+td {
+	max-width:100%;
+	vertical-align:top;
+}
+a {
+	color:#216c2a;
+	text-decoration:underline; 
+}
+a:active {
+	color:#990000;
+	text-decoration:none;
+}
+h1,h2 {
+	font-size:100%;
+	font-weight:bold;
+	line-height:1.0;
+	margin:0 auto;
+	padding:0;
+}
+img {
+	background-color:#fff;
+	padding:0.25em; 
+	margin:0.25em 0.25em 0.25em 0; 
+}
 #forecast_information, #current_conditions, #forecast_conditions, #options {
-	background:#efe; 
-	padding:5px 10px; 
+	background-color:#efe; 
+	padding:0.25em 0.5em; 
 	border-top:1px solid #fff; 
 	border-bottom:1px solid #898;
 }
-
-#forecast_information h1, p {
+#forecast_information h1 {
 	display:block; 
-	font-size:16px; 
+	font-size:100%; 
 	font-weight:bold; 
-	text-shadow:0 1px #fff; 
-	text-align: center;
+	text-shadow:0 0.1em #fff; 
+	text-align:center;
 }
 #forecast_information p {
-	font-size:12px; 
-	font-weight:normal; 
+	font-size:0.7em;
+	font-weight:bold; 
+	margin:0.5em 0;
+	padding:0;
+	text-align:center;
 }
-
 #current_conditions td {
-	font-size:10px;
+	font-size:0.7em;
 }
-
 #forecast_conditions td {
-	width:155px; /* this width makes sure that the weather desc don't wrap - adjust for diff page sizes */
+	margin:0;
+	padding:0 0.5em;
+	max-width:20%;
+	width:155px;
 } 
 #forecast_conditions td img {
-	margin-top:3px;
+	margin-top:0.1em;
+	max-width:100%;
 }
 #forecast_conditions h2 {
-	font-size: 18px;
+	font-size:100%;
 }
 #forecast_conditions div {
-	font-size: 10px;
+	font-size:0.7em;
 }
-
 #options_header {
-	font-size:18px; 
+	font-size:100%;
+	font-weight:bold;
+	margin:0 auto;
+	padding:0;
 	text-align:left;
 }
 #options {
@@ -65,22 +96,16 @@ img {padding:5px; margin:5px 5px 5px 0; background:#fff;}
 select#city_menu {
 	margin:0px 0 0px 0; 
 	border:2px solid #898; 
-	padding:5px 10px;
+	padding:0.25em;
 }
-select#city_menu {
-	padding:3px;
-}
-
 .template {
 	display:none;
 }
 .wlwebus-footer {
 	color:#216c2a;
-	line-height:1.25;
+	font-size:0.7em;
+	font-weight:bold; 
 	margin:0 auto;
 	padding:0.5em;
 	text-align:center;
-}
-.wlwebus-footer a {
-	text-decoration:underline;
 }
