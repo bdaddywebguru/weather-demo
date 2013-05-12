@@ -21,7 +21,6 @@ Created, integrated or modified by WhiteLabelWebDeveloper.com ( 877-919-0326 | i
 			<h1>Forecast for {{display_location.full}}</h1>
 			<p>{{observation_time}}</p>
 		</script>
-<div style="background-color:#ffff00;">
 		<script type="text/javascript" id="current_conditions_tmpl">
 			<table>
 				<tr>
@@ -35,7 +34,6 @@ Created, integrated or modified by WhiteLabelWebDeveloper.com ( 877-919-0326 | i
 				</tr>
 			</table>
 		</script>
-</div>
 		<script type="text/javascript" id="forecast_conditions_tmpl">
 			{{#forecastday}}
 			<td>
@@ -47,11 +45,8 @@ Created, integrated or modified by WhiteLabelWebDeveloper.com ( 877-919-0326 | i
 			</td>
 			{{/forecastday}}
 		</script>
-		
 		<header id="forecast_information"></header>
-
-		<section id="current_conditions"></section>
-
+		<section id="current_conditions" style="background-color:pink"></section>
 		<section id="forecast_conditions">
 			<table>
 				<tr><td>&nbsp;</td></tr>
