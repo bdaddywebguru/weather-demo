@@ -109,3 +109,7 @@ select#city_menu {
 	padding:0.5em;
 	text-align:center;
 }
+#forecast_information {
+	margin:0 auto;
+	padding:0.25em 0.5em; 
+}
