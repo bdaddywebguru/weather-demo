@@ -110,7 +110,7 @@ select#city_menu {
 	padding:0.5em;
 	text-align:center;
 }
-#forecast_information {
+#forecast_information, #current_conditions {
 	margin:0 auto;
 	padding:0; 
 }
