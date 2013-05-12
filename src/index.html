@@ -10,18 +10,24 @@ Created, integrated or modified by WhiteLabelWebDeveloper.com ( 877-919-0326 | i
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+header {
+	color:pink;
+	margin:0 auto;
+	padding:0;
+}
+</style>
 		<script type="text/javascript" src='../_forge/app_config.js'></script>
 		<script type="text/javascript" src='../_forge/all.js'></script>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/mustache.min.js"></script>
 		<script type="text/javascript" src="js/weather.js"></script>
 	</head>
-	<body><div style="color:pink">
+	<body>
 		<script type="text/javascript" id="forecast_information_tmpl">
 			<h1>Forecast for {{display_location.full}}</h1>
 			<p>{{observation_time}}</p>
 		</script>
-</div>
 		<script type="text/javascript" id="current_conditions_tmpl">
 			<table>
 				<tr>
