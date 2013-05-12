@@ -46,9 +46,10 @@ img {
 }
 #forecast_information, #current_conditions, #forecast_conditions, #options {
 	background-color:#efe; 
-	padding:0.25em 0.5em; 
 	border-top:1px solid #fff; 
 	border-bottom:1px solid #898;
+	margin:0 auto;
+	padding:0.25em 0.5em; 
 }
 #forecast_information h1 {
 	display:block; 
