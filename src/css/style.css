@@ -115,3 +115,16 @@ select#city_menu {
 	margin:0 auto;
 	padding:0; 
 }
+p.w3c {
+	color:#216c2a;
+	font-family:Verdana,Arial,sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	margin:10px auto;
+	padding:0;
+	text-align:center;
+}
+a.w3c {
+	color:#216c2a;
+	text-decoration:underline;
+}
